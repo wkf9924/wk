@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="qQk-CA-z3E" customClass="WriteCardView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="燃气卡号:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ebT-uf-ZA5">
+                    <rect key="frame" x="10" y="20" width="80" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="Lie-ML-xOh"/>
+                        <constraint firstAttribute="width" constant="80" id="sdq-gc-WcG"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z3W-Yg-QUB">
+                    <rect key="frame" x="90" y="19" width="229" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="ZaY-lx-Qwq"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="金        额:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tEx-9E-lsZ">
+                    <rect key="frame" x="10" y="52" width="80" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="QEx-Gg-693"/>
+                        <constraint firstAttribute="width" constant="80" id="zge-FB-gtZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="99P-QS-io6">
+                    <rect key="frame" x="90" y="51" width="229" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="rtV-Gn-dTk"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UI2-nb-pBG">
+                    <rect key="frame" x="10" y="88" width="300" height="30"/>
+                    <color key="backgroundColor" red="0.96470588239999999" green="0.44705882349999998" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="obJ-w2-P1U"/>
+                    </constraints>
+                    <state key="normal" title="写卡">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="99P-QS-io6" firstAttribute="top" secondItem="Z3W-Yg-QUB" secondAttribute="bottom" constant="11" id="1cG-7h-beN"/>
+                <constraint firstItem="UI2-nb-pBG" firstAttribute="top" secondItem="99P-QS-io6" secondAttribute="bottom" constant="16" id="BuZ-j4-ve8"/>
+                <constraint firstAttribute="trailing" secondItem="99P-QS-io6" secondAttribute="trailing" constant="1" id="E5W-Kd-dYg"/>
+                <constraint firstItem="ebT-uf-ZA5" firstAttribute="top" secondItem="qQk-CA-z3E" secondAttribute="top" constant="20" id="LTr-nf-U6e"/>
+                <constraint firstItem="Z3W-Yg-QUB" firstAttribute="top" secondItem="qQk-CA-z3E" secondAttribute="top" constant="19" id="QN9-EQ-Xlw"/>
+                <constraint firstItem="UI2-nb-pBG" firstAttribute="leading" secondItem="qQk-CA-z3E" secondAttribute="leading" constant="10" id="VXy-FX-BSr"/>
+                <constraint firstItem="Z3W-Yg-QUB" firstAttribute="leading" secondItem="ebT-uf-ZA5" secondAttribute="trailing" id="fCf-7O-ezp"/>
+                <constraint firstAttribute="trailing" secondItem="UI2-nb-pBG" secondAttribute="trailing" constant="10" id="iBp-D6-yOx"/>
+                <constraint firstItem="tEx-9E-lsZ" firstAttribute="top" secondItem="ebT-uf-ZA5" secondAttribute="bottom" constant="12" id="jkN-1c-4GZ"/>
+                <constraint firstItem="ebT-uf-ZA5" firstAttribute="leading" secondItem="qQk-CA-z3E" secondAttribute="leading" constant="10" id="lEI-sf-m4C"/>
+                <constraint firstAttribute="trailing" secondItem="Z3W-Yg-QUB" secondAttribute="trailing" constant="1" id="u6H-3M-Pkb"/>
+                <constraint firstItem="tEx-9E-lsZ" firstAttribute="leading" secondItem="qQk-CA-z3E" secondAttribute="leading" constant="10" id="wW8-mf-aET"/>
+                <constraint firstItem="99P-QS-io6" firstAttribute="leading" secondItem="tEx-9E-lsZ" secondAttribute="trailing" id="ygC-xU-pBd"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <connections>
+                <outlet property="JinElab" destination="99P-QS-io6" id="15R-lS-gtv"/>
+                <outlet property="KindLab" destination="tEx-9E-lsZ" id="ceZ-3Q-TBm"/>
+                <outlet property="carLab" destination="Z3W-Yg-QUB" id="wmQ-cI-fhb"/>
+                <outlet property="writeBtn" destination="UI2-nb-pBG" id="zcf-of-9BH"/>
+            </connections>
+        </view>
+    </objects>
+</document>

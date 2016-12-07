@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProtectController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="账户保护" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D7D-Oq-4AQ">
+                    <rect key="frame" x="8" y="65" width="73" height="31"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="73" id="lab-0O-rza"/>
+                        <constraint firstAttribute="height" constant="31" id="rdC-d6-YMz"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XBL-Hl-VPr">
+                    <rect key="frame" x="256" y="65" width="51" height="31"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="31" id="KL2-bq-cb3"/>
+                        <constraint firstAttribute="width" constant="49" id="TVp-Em-iBf"/>
+                    </constraints>
+                    <connections>
+                        <action selector="SwitchTouch:" destination="-1" eventType="valueChanged" id="N2w-Ut-gBa"/>
+                    </connections>
+                </switch>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="开启账号保护后,在不常用的手机上登录生活易,需要进行身份验证" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="46u-2m-tGP">
+                    <rect key="frame" x="8" y="104" width="297" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="LDq-XW-IxE"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="46u-2m-tGP" secondAttribute="trailing" constant="15" id="1dv-6f-jSx"/>
+                <constraint firstItem="46u-2m-tGP" firstAttribute="top" secondItem="XBL-Hl-VPr" secondAttribute="bottom" constant="8" id="2Dt-dJ-mcy"/>
+                <constraint firstItem="D7D-Oq-4AQ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="65" id="5O4-oL-8AV"/>
+                <constraint firstItem="46u-2m-tGP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="BA2-yU-nE0"/>
+                <constraint firstItem="D7D-Oq-4AQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="KFp-mj-pMQ"/>
+                <constraint firstItem="XBL-Hl-VPr" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="65" id="ZQ1-na-f6B"/>
+                <constraint firstAttribute="trailing" secondItem="XBL-Hl-VPr" secondAttribute="trailing" constant="15" id="hPi-Cf-zja"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>

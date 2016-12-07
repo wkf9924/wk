@@ -7,10 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <WXApi.h>
+#import "UPPaymentControl.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate,ServiceHelperDelegate,WXApiDelegate>
 
-@property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) UIWindow      *window;
+
+@property (strong, nonatomic) ServiceHelper *helper;
 
 
 @end

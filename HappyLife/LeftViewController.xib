@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LeftViewController">
+            <connections>
+                <outlet property="myTableView" destination="NLN-hl-8SM" id="cih-2W-LRV"/>
+                <outlet property="phoneLab" destination="jii-Ad-I5c" id="aKU-Fs-FGn"/>
+                <outlet property="versionLab" destination="4nm-Tr-HLG" id="Q17-vo-YP5"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="250" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tuichu.png" translatesAutoresizingMaskIntoConstraints="NO" id="oTk-bE-tL5">
+                    <rect key="frame" x="45" y="430" width="160" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Eg7-g6-jQM"/>
+                    </constraints>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="NLN-hl-8SM">
+                    <rect key="frame" x="45" y="155" width="180" height="250"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="180" id="j7I-zL-ZNv"/>
+                        <constraint firstAttribute="height" constant="250" id="u6A-wM-rbM"/>
+                        <constraint firstAttribute="width" constant="160" id="xkZ-yJ-op9"/>
+                    </constraints>
+                    <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="xkZ-yJ-op9"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="cUA-wf-xah"/>
+                        <outlet property="delegate" destination="-1" id="vkt-Zf-ByT"/>
+                    </connections>
+                </tableView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="setinfo.png" translatesAutoresizingMaskIntoConstraints="NO" id="vRA-Bn-hPE">
+                    <rect key="frame" x="37" y="30" width="80" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="hxj-JZ-RRq"/>
+                        <constraint firstAttribute="width" constant="80" id="whl-pD-YKG"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tSt-R7-Eg1">
+                    <rect key="frame" x="45" y="430" width="160" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="160" id="6nx-yn-IqM"/>
+                        <constraint firstAttribute="height" constant="40" id="Mjr-uP-Hy6"/>
+                    </constraints>
+                    <connections>
+                        <action selector="ExitAction:" destination="-1" eventType="touchUpInside" id="5mW-La-txC"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="用户名: 18700489142" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jii-Ad-I5c">
+                    <rect key="frame" x="118" y="56" width="130" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="hab-Hf-rtJ"/>
+                        <constraint firstAttribute="width" constant="130" id="kPL-ih-UXC"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="版本号: 1.0.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4nm-Tr-HLG">
+                    <rect key="frame" x="118" y="76" width="125" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="FP2-Zc-D6N"/>
+                        <constraint firstAttribute="width" constant="125" id="gx9-K5-ZvZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="oTk-bE-tL5" firstAttribute="top" secondItem="NLN-hl-8SM" secondAttribute="bottom" constant="53" id="0pw-i4-WMc"/>
+                <constraint firstItem="oTk-bE-tL5" firstAttribute="top" secondItem="NLN-hl-8SM" secondAttribute="bottom" constant="25" id="7Zi-Aq-jZn"/>
+                <constraint firstItem="NLN-hl-8SM" firstAttribute="top" secondItem="vRA-Bn-hPE" secondAttribute="bottom" constant="45" id="7wJ-wm-20A"/>
+                <constraint firstItem="vRA-Bn-hPE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="45" id="C4C-94-42A"/>
+                <constraint firstItem="jii-Ad-I5c" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="56" id="CSS-aD-doP"/>
+                <constraint firstItem="NLN-hl-8SM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="45" id="Daj-2f-NGu"/>
+                <constraint firstItem="NLN-hl-8SM" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="I54-A3-Hc3"/>
+                <constraint firstItem="vRA-Bn-hPE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="37" id="Iif-Rk-ASL"/>
+                <constraint firstItem="tSt-R7-Eg1" firstAttribute="top" secondItem="NLN-hl-8SM" secondAttribute="bottom" constant="53" id="M1Q-Mh-hGy"/>
+                <constraint firstItem="vRA-Bn-hPE" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="S75-EK-k8F"/>
+                <constraint firstItem="tSt-R7-Eg1" firstAttribute="top" secondItem="NLN-hl-8SM" secondAttribute="bottom" constant="53" id="UkO-xU-a6G"/>
+                <constraint firstItem="tSt-R7-Eg1" firstAttribute="top" secondItem="NLN-hl-8SM" secondAttribute="bottom" constant="25" id="X57-qX-YC3"/>
+                <constraint firstItem="vRA-Bn-hPE" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="XhE-au-XUZ"/>
+                <constraint firstItem="jii-Ad-I5c" firstAttribute="leading" secondItem="vRA-Bn-hPE" secondAttribute="trailing" constant="1" id="aAs-Ah-yLz"/>
+                <constraint firstItem="oTk-bE-tL5" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="45" id="apo-ia-E7U"/>
+                <constraint firstItem="tSt-R7-Eg1" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="fJE-Ma-NPs"/>
+                <constraint firstItem="4nm-Tr-HLG" firstAttribute="leading" secondItem="vRA-Bn-hPE" secondAttribute="trailing" constant="1" id="fr9-6g-B1s"/>
+                <constraint firstItem="oTk-bE-tL5" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="fw9-WS-vr4"/>
+                <constraint firstAttribute="bottom" secondItem="tSt-R7-Eg1" secondAttribute="bottom" constant="32" id="jCw-4d-MdC"/>
+                <constraint firstItem="4nm-Tr-HLG" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="76" id="sk0-Gu-WAi"/>
+                <constraint firstAttribute="trailing" secondItem="oTk-bE-tL5" secondAttribute="trailing" constant="45" id="u66-AZ-uz9"/>
+                <constraint firstAttribute="bottom" secondItem="oTk-bE-tL5" secondAttribute="bottom" constant="32" id="v5f-20-E5k"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="C4C-94-42A"/>
+                    <exclude reference="XhE-au-XUZ"/>
+                    <exclude reference="I54-A3-Hc3"/>
+                    <exclude reference="0pw-i4-WMc"/>
+                    <exclude reference="v5f-20-E5k"/>
+                    <exclude reference="M1Q-Mh-hGy"/>
+                    <exclude reference="UkO-xU-a6G"/>
+                    <exclude reference="jCw-4d-MdC"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+    <resources>
+        <image name="setinfo.png" width="170" height="170"/>
+        <image name="tuichu.png" width="600" height="85"/>
+    </resources>
+</document>

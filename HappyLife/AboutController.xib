@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AboutController">
+            <connections>
+                <outlet property="iconBtn" destination="kHH-FD-jo2" id="Myg-Dl-WIP"/>
+                <outlet property="versionLab" destination="HEw-oJ-pc5" id="Apg-Jf-UwY"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kHH-FD-jo2">
+                    <rect key="frame" x="120" y="120" width="80" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="C5w-4a-PjS"/>
+                        <constraint firstAttribute="width" constant="80" id="rsK-XI-Fbz"/>
+                    </constraints>
+                    <state key="normal" image="ic_launcher.png"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="版本号:1.0.6" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HEw-oJ-pc5">
+                    <rect key="frame" x="0.0" y="220" width="320" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="320" id="FQ5-wX-QwN"/>
+                        <constraint firstAttribute="height" constant="21" id="GRT-0O-kxe"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="西安普瑞米特科技有限公司" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="joK-f0-GDj">
+                    <rect key="frame" x="0.0" y="430" width="320" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Vmt-Kp-hhT"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="joK-f0-GDj" secondAttribute="bottom" id="3ya-WN-Kem"/>
+                <constraint firstItem="HEw-oJ-pc5" firstAttribute="top" secondItem="kHH-FD-jo2" secondAttribute="bottom" id="BOL-hI-GAS"/>
+                <constraint firstItem="HEw-oJ-pc5" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="C0J-WO-p25"/>
+                <constraint firstAttribute="trailing" secondItem="joK-f0-GDj" secondAttribute="trailing" id="Sm4-Dc-qtQ"/>
+                <constraint firstItem="kHH-FD-jo2" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="VyV-ZS-NRs"/>
+                <constraint firstItem="kHH-FD-jo2" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="120" id="bJc-bn-RAA"/>
+                <constraint firstItem="joK-f0-GDj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="qwN-7U-iZy"/>
+                <constraint firstItem="HEw-oJ-pc5" firstAttribute="top" secondItem="kHH-FD-jo2" secondAttribute="bottom" constant="20" id="vTx-mG-ex8"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="BOL-hI-GAS"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_launcher.png" width="500" height="500"/>
+    </resources>
+</document>
